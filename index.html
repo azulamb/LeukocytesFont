@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.ico"/>
+	<link rel="icon" href="favicon.png" type="image/png"/>
+	<title>Leukocytes　Font</title>
+	<script>
+function change( cls )
+{ 
+	var elements = document.getElementsByClassName( cls );
+	var i;
+	for ( i = 0 ; i < elements.length ; ++i )
+	{
+		if ( elements[ i ].style.display == "none" ) {
+			elements[ i ].style.display = "block";
+		} else {
+			elements[ i ].style.display = "none";
+		}
+	}
+}
+function display( cls, val )
+{ 
+	var elements = document.getElementsByClassName( cls );
+	var i;
+	for ( i = 0 ; i < elements.length ; ++i )
+	{
+		elements[ i ].style.display = val;
+	}
+}
+function langchange()
+{ 
+	change( "en" );
+	change( "ja" )
+}
+function browserlang()
+{
+	try
+	{
+		return (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0,2)
+	} catch(e)
+	{
+		return undefined;
+	}
+}
+window.onload = function init()
+{
+	var del = "ja";
+	if ( browserlang() == "ja" )
+	{
+		del = "en";
+	}
+	display( del, "none" );
+	display( del == "ja" ? "en" : "ja", "block" );
+}
+	</script>
+	<style>
+@font-face {
+	font-family: 'Leukocytes';
+	src: url('LeukocytesFont.ttf') format('truetype');
+}
+html, body {
+	margin: 0px;
+	padding; 0px;
+	height: 100%;
+	background-color: #333333;
+	font-size: 30px;
+	color: #000000;
+}
+
+header {
+	height: 80px;
+	background-color: #000000;
+	color: #ffffff;
+	position: relative;
+}
+
+span {
+	font-family: 'Leukocytes';
+}
+
+a {
+	color: #333333;
+}
+
+header a {
+	color: #f8fbf8;
+	text-shadow: 0px 0px 0.5px #f8fbf8;
+}
+
+p {
+	margin: 10px;
+}
+
+.ja {
+	display: none;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 10px;
+	text-align: center;
+}
+
+
+article {
+	padding-bottom: 40px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	height: 40px;
+	background-color: #000000;
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+}
+
+div.main {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	position: relative;
+	height:auto !important;
+	height: 100%;
+	min-height: 100%;
+}
+
+div.box {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background-color: #ffffff;
+	width: 800px;
+	padding: 20px;
+	margin: 20px auto;
+}
+
+a#lang {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+}
+
+ul.fontlist {
+	padding: 0px;
+	margin: 0px;
+}
+ul.fontlist:after {
+	content: ""; 
+	display: block; 
+	clear: both;
+}
+
+ul.fontlist li {
+	width: 50px;
+	height: 68px;
+	float: left;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.ndf {
+	font-family: 'Leukocytes';
+	font-size: 50px;
+	background-color: #ffffff;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	text-shadow: none;
+	text-align: center;
+}
+
+div.name {
+	text-align: center;
+	width: 50px;
+	font-size: 12px;
+	padding: 0px;
+	background-color: #333333;
+	color: #ffffff;
+}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<header>
+			<h1><span>Leukocytes Font</span></h1>
+			<a href="javascript:void(0);" onclick="langchange();" id="lang"><b class="en">日本語</b><b class="ja">English</b></a>
+		</header>
+
+		<article>
+
+			<div class="box">
+				<h2>What's Leukocytes Font</h2>
+				<p class="en">Leukocytes Font is design font.</p>
+				<p class="ja">Leukocytes Fontはデザインフォントです。</p>
+			</div>
+
+			<div class="box">
+				<h2>Get Leukocytes Font</h2>
+				<ul>
+					<li><a href="https://github.com/HirokiMiyaoka/9dotsfont">GitHub</a></li>
+				</ul>
+			</div>
+
+			<div class="box">
+				<h2>Leukocytes Font table</h2>
+				<ul class="fontlist">
+					<li><div class="ndf"><pre> </pre></div><div class="name">Space</div></li>
+					<li><div class="ndf">!</div><div class="name">!</div></li>
+					<li><div class="ndf">"</div><div class="name">"</div></li>
+					<li><div class="ndf">#</div><div class="name">#</div></li>
+					<li><div class="ndf">$</div><div class="name">$</div></li>
+					<li><div class="ndf">%</div><div class="name">%</div></li>
+					<li><div class="ndf">&</div><div class="name">&</div></li>
+					<li><div class="ndf">'</div><div class="name">'</div></li>
+					<li><div class="ndf">(</div><div class="name">(</div></li>
+					<li><div class="ndf">)</div><div class="name">)</div></li>
+					<li><div class="ndf">*</div><div class="name">*</div></li>
+					<li><div class="ndf">+</div><div class="name">+</div></li>
+					<li><div class="ndf">,</div><div class="name">,</div></li>
+					<li><div class="ndf">-</div><div class="name">-</div></li>
+					<li><div class="ndf">.</div><div class="name">.</div></li>
+					<li><div class="ndf">/</div><div class="name">/</div></li>
+					<li><div class="ndf">0</div><div class="name">0</div></li>
+					<li><div class="ndf">1</div><div class="name">1</div></li>
+					<li><div class="ndf">2</div><div class="name">2</div></li>
+					<li><div class="ndf">3</div><div class="name">3</div></li>
+					<li><div class="ndf">4</div><div class="name">4</div></li>
+					<li><div class="ndf">5</div><div class="name">5</div></li>
+					<li><div class="ndf">6</div><div class="name">6</div></li>
+					<li><div class="ndf">7</div><div class="name">7</div></li>
+					<li><div class="ndf">8</div><div class="name">8</div></li>
+					<li><div class="ndf">9</div><div class="name">9</div></li>
+					<li><div class="ndf">:</div><div class="name">:</div></li>
+					<li><div class="ndf">;</div><div class="name">;</div></li>
+					<li><div class="ndf">&lt;</div><div class="name">&lt;</div></li>
+					<li><div class="ndf">=</div><div class="name">=</div></li>
+					<li><div class="ndf">&gt;</div><div class="name">&gt;</div></li>
+					<li><div class="ndf">?</div><div class="name">?</div></li>
+					<li><div class="ndf">@</div><div class="name">@</div></li>
+					<li><div class="ndf">A</div><div class="name">A</div></li>
+					<li><div class="ndf">B</div><div class="name">B</div></li>
+					<li><div class="ndf">C</div><div class="name">C</div></li>
+					<li><div class="ndf">D</div><div class="name">D</div></li>
+					<li><div class="ndf">E</div><div class="name">E</div></li>
+					<li><div class="ndf">F</div><div class="name">F</div></li>
+					<li><div class="ndf">G</div><div class="name">G</div></li>
+					<li><div class="ndf">H</div><div class="name">H</div></li>
+					<li><div class="ndf">I</div><div class="name">I</div></li>
+					<li><div class="ndf">J</div><div class="name">J</div></li>
+					<li><div class="ndf">K</div><div class="name">K</div></li>
+					<li><div class="ndf">L</div><div class="name">L</div></li>
+					<li><div class="ndf">M</div><div class="name">M</div></li>
+					<li><div class="ndf">N</div><div class="name">N</div></li>
+					<li><div class="ndf">O</div><div class="name">O</div></li>
+					<li><div class="ndf">P</div><div class="name">P</div></li>
+					<li><div class="ndf">Q</div><div class="name">Q</div></li>
+					<li><div class="ndf">R</div><div class="name">R</div></li>
+					<li><div class="ndf">S</div><div class="name">S</div></li>
+					<li><div class="ndf">T</div><div class="name">T</div></li>
+					<li><div class="ndf">U</div><div class="name">U</div></li>
+					<li><div class="ndf">V</div><div class="name">V</div></li>
+					<li><div class="ndf">W</div><div class="name">W</div></li>
+					<li><div class="ndf">X</div><div class="name">X</div></li>
+					<li><div class="ndf">Y</div><div class="name">Y</div></li>
+					<li><div class="ndf">Z</div><div class="name">Z</div></li>
+					<li><div class="ndf">[</div><div class="name">[</div></li>
+					<li><div class="ndf">\</div><div class="name">\</div></li>
+					<li><div class="ndf">]</div><div class="name">]</div></li>
+					<li><div class="ndf">^</div><div class="name">^</div></li>
+					<li><div class="ndf">_</div><div class="name">_</div></li>
+					<li><div class="ndf">`</div><div class="name">`</div></li>
+					<li><div class="ndf">a</div><div class="name">a</div></li>
+					<li><div class="ndf">b</div><div class="name">b</div></li>
+					<li><div class="ndf">c</div><div class="name">c</div></li>
+					<li><div class="ndf">d</div><div class="name">d</div></li>
+					<li><div class="ndf">e</div><div class="name">e</div></li>
+					<li><div class="ndf">f</div><div class="name">f</div></li>
+					<li><div class="ndf">g</div><div class="name">g</div></li>
+					<li><div class="ndf">h</div><div class="name">h</div></li>
+					<li><div class="ndf">i</div><div class="name">i</div></li>
+					<li><div class="ndf">j</div><div class="name">j</div></li>
+					<li><div class="ndf">k</div><div class="name">k</div></li>
+					<li><div class="ndf">l</div><div class="name">l</div></li>
+					<li><div class="ndf">m</div><div class="name">m</div></li>
+					<li><div class="ndf">n</div><div class="name">n</div></li>
+					<li><div class="ndf">o</div><div class="name">o</div></li>
+					<li><div class="ndf">p</div><div class="name">p</div></li>
+					<li><div class="ndf">q</div><div class="name">q</div></li>
+					<li><div class="ndf">r</div><div class="name">r</div></li>
+					<li><div class="ndf">s</div><div class="name">s</div></li>
+					<li><div class="ndf">t</div><div class="name">t</div></li>
+					<li><div class="ndf">u</div><div class="name">u</div></li>
+					<li><div class="ndf">v</div><div class="name">v</div></li>
+					<li><div class="ndf">w</div><div class="name">w</div></li>
+					<li><div class="ndf">x</div><div class="name">x</div></li>
+					<li><div class="ndf">y</div><div class="name">y</div></li>
+					<li><div class="ndf">z</div><div class="name">z</div></li>
+					<li><div class="ndf">{</div><div class="name">{</div></li>
+					<li><div class="ndf">|</div><div class="name">|</div></li>
+					<li><div class="ndf">}</div><div class="name">}</div></li>
+					<li><div class="ndf">~</div><div class="name">~</div></li>
+				</ul>
+			</div>
+
+			<div class="box">
+				<h2>License</h2>
+				<p class="en">These fonts are free software. </p>
+				<p class="en">Unlimited permission is granted to use, copy, and distribute them, with or without modification, either commercially or noncommercially. </p>
+				<p class="en">THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.</p>
+				<p class="ja">これらのフォントはフリー（自由な）ソフトウエアです。 </p>
+				<p class="ja">あらゆる改変の有無に関わらず、また商業的な利用であっても、自由にご利用、複製、再配布することができますが、全て無保証とさせていただきます。</p>
+			</div>
+
+		</article>
+		<footer><small>Copyright &copy; 2014 Hiroki All Rights Reserved.<small></footer>
+	</div>
+</body>
+</html>
