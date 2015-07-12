@@ -459,7 +459,7 @@
          id="glyph7672"
          unicode="i"
          horiz-adv-x="300"
-         d="m 280,860 a 60.000031,60.000031 0 0 1 -60,-60 60.000031,60.000031 0 0 1 60,-60 60.000031,60.000031 0 0 1 60,60 60.000031,60.000031 0 0 1 -60,60 z M 230,679.99805 230,200 l 100,0 0,479.99805 -100,0 z" />
+         d="m 150,860 a 60.000031,60.000031 0 0 1 -60,-60 60.000031,60.000031 0 0 1 60,-60 60.000031,60.000031 0 0 1 60,60 60.000031,60.000031 0 0 1 -60,60 z M 100,679.99805 100,200 l 100,0 0,479.99805 -100,0 z" />
       <glyph
          glyph-name="j"
          id="glyph7710"
@@ -590,10 +590,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="173.30272"
+     inkscape:cx="-166.81564"
      inkscape:cy="471.58799"
      inkscape:document-units="px"
-     inkscape:current-layer="layer95"
+     inkscape:current-layer="layer74"
      showgrid="true"
      inkscape:window-width="2048"
      inkscape:window-height="1411"
